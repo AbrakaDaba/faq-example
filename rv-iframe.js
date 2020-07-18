@@ -3,15 +3,12 @@
     var iframeSource = "https://abrakadaba.github.io/faq-example/";
 
     var iframe = document.createElement("iframe");
-    var iframeBox = document.getElementById("rv-iframe-box");
+    var iframeBox = document.getElementById("rv-iframe-box"); 
     iframe.setAttribute("src", iframeSource);
-    iframe.setAttribute("src", iframeSource);
-    iframe.setAttribute("style", "border: 0px; margin: 0px auto; display: block;");
+    iframe.setAttribute("style", "border: 0px; margin: 0px auto; display: block;visibility:hidden;");
     iframe.setAttribute("id", "rv_iframe");
-     iframe.setAttribute("onload", "setIframeHeight(this.id)");
-    // iframe.style.width = 450 + "px";
-    // iframe.style.height = 400 + "px";
-  iframeBox.appendChild(iframe);
+     iframe.setAttribute("onload", "setIframeHeight(this.id)"); 
+    iframeBox.appendChild(iframe);
 
     
      function getDocHeight(doc) {
