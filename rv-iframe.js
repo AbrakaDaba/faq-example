@@ -10,6 +10,6 @@
     iframe.setAttribute("id", "rv_iframe");
     // iframe.style.width = 450 + "px";
     // iframe.style.height = 400 + "px";
-    document.body.appendChild(iframe);
+  iframeBox.appendChild(iframe);
 
 })();
