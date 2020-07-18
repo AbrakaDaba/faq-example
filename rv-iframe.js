@@ -1,6 +1,6 @@
 (function () {
 
-    var iframeSource = "https://cross-domain-iframe.nfshost.com/iframe.html";
+    var iframeSource = "https://abrakadaba.github.io/faq-example/";
 
     var iframe = document.createElement("iframe");
     var iframeBox = document.getElementById("rv-iframe-box");
