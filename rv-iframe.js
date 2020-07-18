@@ -1,4 +1,4 @@
-(function () {
+// (function () {
 
      function getDocHeight(doc) {
         doc = doc || document;
@@ -35,4 +35,4 @@
     
     
     
-})();
+// })();
