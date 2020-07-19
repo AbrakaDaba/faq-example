@@ -143,7 +143,9 @@ if ( window.addEventListener ) {
  
  var vrInputs = document.getElementsByClassName("question");
 for(i=0; i<vrInputs.length; i++){
-    vrInputs[i].addEventListener("click", sendDocHeightMsg, false )
+    vrInputs[i].addEventListener("click", function(){
+    setTimeout(sendDocHeightMsg, 500);
+    }, false )
 }
  
  
