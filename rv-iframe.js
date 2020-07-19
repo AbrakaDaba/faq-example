@@ -52,6 +52,7 @@ function handleDocHeightMsg(e) {
         // check data object
         if ( data['docHeight'] ) {
             setIframeHeightCO( 'ifrm', data['docHeight'] );
+            console.log(data['docHeight']);
         } else if ( data['href'] ) { 
             setIframe('ifrm', data['href'] );
         }
@@ -61,6 +62,7 @@ function handleDocHeightMsg(e) {
 // assign message handler
 if ( window.addEventListener ) {
     window.addEventListener('message', handleDocHeightMsg, false);
+    console.log("message ocured")
 } else if ( window.attachEvent ) { // ie8
     window.attachEvent('onmessage', handleDocHeightMsg);
 }
