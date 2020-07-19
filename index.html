@@ -124,6 +124,8 @@ function getDocHeight(doc) {
     var height = 0;
     var height = Math.max( body.scrollHeight, body.offsetHeight, 
         html.clientHeight, html.scrollHeight, html.offsetHeight );
+    console.log(body.scrollHeight, body.offsetHeight, 
+        html.clientHeight, html.scrollHeight, html.offsetHeight)
     return height;
 }
 
@@ -145,7 +147,7 @@ if ( window.addEventListener ) {
  var vrInputs = document.getElementsByClassName("question");
 for(i=0; i<vrInputs.length; i++){
     vrInputs[i].addEventListener("click", function(){
-    setTimeout(sendDocHeightMsg, 500);
+    setTimeout(sendDocHeightMsg, 300);
     }, false )
 }
  
