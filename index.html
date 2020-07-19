@@ -147,10 +147,14 @@ if ( window.addEventListener ) {
  var vrInputs = document.getElementsByClassName("question");
 for(i=0; i<vrInputs.length; i++){
     vrInputs[i].addEventListener("click", function(){
-    setTimeout(sendDocHeightMsg, 300);
+    setTimeout(sendNewHeightMsg, 300);
     }, false )
 }
- 
+
+function sendNewHeightMsg(e) {
+    var ht = Math.max(body.offsetHeight, html.offsetHeight );
+    parent.postMessage( JSON.stringify( {'docHeight': ht} ), '*' );
+}
  
 </script>
     
