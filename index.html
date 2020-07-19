@@ -141,7 +141,10 @@ if ( window.addEventListener ) {
     window.attachEvent('onload', sendDocHeightMsg);
 }
  
- 
+ var vrInputs = document.getElementsByClassName("question");
+for(i=0; i<vrInputs.length; i++){
+    vrInputs[i].addEventListener("click", sendDocHeightMsg, false )
+}
  
  
 </script>
