@@ -152,7 +152,7 @@ for(i=0; i<vrInputs.length; i++){
 }
 
 function sendNewHeightMsg(e) {
-    doc = doc || document; 
+    var doc = document; 
     var body = doc.body, html = doc.documentElement;
     var ht = Math.max(body.offsetHeight, html.offsetHeight );
     parent.postMessage( JSON.stringify( {'docHeight': ht} ), '*' );
