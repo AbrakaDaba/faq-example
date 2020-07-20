@@ -43,7 +43,7 @@
 
 // iframed document sends its height using postMessage
 function handleDocHeightMsg(e) {
-    console.log("in function");
+    console.log("in function", e.origin);
     // check origin
     if ( e.origin === 'https://github.com/AbrakaDaba' ) {
         // parse data
