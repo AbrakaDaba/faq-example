@@ -45,9 +45,9 @@
 function handleDocHeightMsg(e) {
     console.log("in function", e.origin);
     // check origin
-    if ( e.origin === 'https://github.com/AbrakaDaba' ) {
+    if ( e.origin == 'https://github.com/AbrakaDaba' ) {
         // parse data
-        console.log("in function, e.origin checked");
+        console.log("e-origin checked");
         var data = JSON.parse( e.data );
         // check data object
         if ( data['docHeight'] ) {
