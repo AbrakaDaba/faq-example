@@ -21,7 +21,7 @@
 //     }
     
     
-//     var iframeSource = "https://abrakadaba.github.io/faq-example/";
+//     var iframeSource = "https://abrakadaba.github.io";
 
 //     var iframe = document.createElement("iframe");
 //     var iframeBox = document.getElementById("rv-iframe-box"); 
