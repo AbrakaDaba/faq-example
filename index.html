@@ -156,6 +156,7 @@ function sendNewHeightMsg(e) {
     var body = doc.body, html = doc.documentElement;
     var ht = Math.max(body.offsetHeight, html.offsetHeight );
     parent.postMessage( JSON.stringify( {'docHeight': ht} ), '*' );
+    console.log(e, "poslato")
 }
  
 </script>
