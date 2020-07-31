@@ -30,7 +30,7 @@
 //     iframe.setAttribute("id", "rv_iframe");
 //      iframe.setAttribute("onload", "setIframeHeight(this.id)"); 
 //     iframeBox.appendChild(iframe);
-window.onload = handleDocHeightMsg(e);
+ 
 
     
     function setIframeHeightCO(id, ht) {
