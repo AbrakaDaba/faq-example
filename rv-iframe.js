@@ -30,6 +30,7 @@
 //     iframe.setAttribute("id", "rv_iframe");
 //      iframe.setAttribute("onload", "setIframeHeight(this.id)"); 
 //     iframeBox.appendChild(iframe);
+window.onload = function(){
 
     
     function setIframeHeightCO(id, ht) {
@@ -66,6 +67,6 @@ if ( window.addEventListener ) {
 } else if ( window.attachEvent ) { // ie8
     window.attachEvent('onmessage', handleDocHeightMsg);
 }
-    
+    }
     
 // })();
