@@ -149,8 +149,11 @@ for(i=0; i<vrInputs.length; i++){
     vrInputs[i].addEventListener("click", function(){
     setTimeout(sendNewHeightMsg, 500);
     }, false )
+     vrInputs[i].addEventListener("input", function(){
+    setTimeout(sendNewHeightMsg, 10);
+    }, false )
 }
-
+ 
 function sendNewHeightMsg() {
     console.log("send");
     var doc = document; 
@@ -159,6 +162,7 @@ function sendNewHeightMsg() {
     parent.postMessage( JSON.stringify( {'docHeight': ht} ), '*' );
     
 }
+window.addEventListener('resize', sendNewHeightMsg);
  
 </script>
     
