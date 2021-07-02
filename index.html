@@ -145,14 +145,14 @@ if ( window.addEventListener ) {
 }
  
  var vrInputs = document.getElementsByClassName("question");
-for(i=0; i<vrInputs.length; i++){
-    vrInputs[i].addEventListener("click", function(){
-    setTimeout(sendNewHeightMsg, 0);
-    }, false )
-     vrInputs[i].addEventListener("input", function(){
-    setTimeout(sendNewHeightMsg, 0);
-    }, false )
-}
+// for(i=0; i<vrInputs.length; i++){
+//     vrInputs[i].addEventListener("click", function(){
+//     setTimeout(sendNewHeightMsg, 0);
+//     }, false )
+//      vrInputs[i].addEventListener("input", function(){
+//     setTimeout(sendNewHeightMsg, 0);
+//     }, false )
+// }
  
 function sendNewHeightMsg() {
     console.log("send");
